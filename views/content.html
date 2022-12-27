@@ -1,0 +1,36 @@
+{{define "content"}}
+<!DOCTYPE html>
+<html>
+  <head>
+    {{template "_header"}}
+  </head>
+  <body>
+    <div class="row">
+      <div style="width: 50%">LOGO</div>
+      <div style="width: 50%; text-align: right">
+        <a href="#">HOME</a>
+        <a href="#">BLOG</a>
+        <a href="">CATEGORY</a>
+      </div>
+    </div>
+    <div class="row">
+      <div style="width: 15%">
+        <ul>
+          <li>Category 1</li>
+          <li>Category 2</li>
+          <li>Category 3</li>
+          <li>Category 4</li>
+          <li>Category 5</li>
+        </ul>
+      </div>
+      <div style="width: 85%">
+        <div>
+          <img src="" alt="Gambar" />
+          <h1>{{.title}}</h1>
+          <p>{{ .content }}</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+{{ end }}
